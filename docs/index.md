@@ -1,31 +1,19 @@
-# Welcome to MkDocs
+# Introduction
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+!!! abstract "Introduction to Power Shell 7"
 
-!!! abstract "What to expect in these notes"
+You have already learned how to use the old command prompt (CLI) in Windows, and you should appreciate that it is a bit archaic and unintuitive. In an OS which has been in use for over 30 years, Microsoft must maintain consistency with the bad and uninformed decisions of a generation ago.
 
-    Yoo hoo!, loads text here
+Not just that; the DOS/Windows command was originally designed to be simple for the average non-technical user to operate a computer. In the 1970s and 80s, for the first time is history, people who were not computer scientists were working directly with computers.
 
-## Commands
+A CLI has no built-in menus, no way to provide hints and assistance to users as to what commands exist and how to use them. Microsoft knew they needed something more powerful and flexible, to give the sort of functionality Linux administrators were used to. 
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+In the post MS-DOS era, all the development effort of Microsoft went into making an intuitive graphical user interface (GUI), not into enhancing the command prompt. In Windows, you interface with the system through the Application Programmers Interface (API), which was intended for calling from C and C++, not from a command line. Windows is tough to program even in C! Yet the CLI is how most administrators want to configure things; it is repeatable, predictable, and economical. Another problem is that Windows, most modern operating system, and programming languages, are object oriented. CLIs do not manipulate objects, they manipulate text files.
 
-## Project layout
+Around 2000, Microsoft ran an internal study to see what it most needed to do to improve its server products. Management tools, in particular the CLI, was one of the priorities identified and the issues mentioned above had to be considered. The obvious and easy thing to do would be to use existing shell commands and an existing language like the Unix Bash shell. However, none of these shells were object based. Every platform had to deal with these issues, and this led to the Distributed Management Task Force [1] being set up and the establishment of a Common Information Model (CIM) for management objects. Microsoft implemented this as Windows Management Instrumentation (WMI )and as you get into PowerShell, you will use this extensively.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Microsoft had already moved their entire platform to .NET, and it made sense to base the new language around the same concepts. The .NET framework is self-describing; that is the objects have a definition of their structure within them. It also meant the new language already had access to the entire set of libraries within .NET. 
 
-```py title="add_numbers.py" linenums="1"
-# Function to add two numbers
-def add_two_numbers(num1, num2):
-    return num1 + num2
+In more recent years, PowerShell has become cross-platform, running on Windows, Linux and MacOS. 
 
-# Example usage
-result = add_two_numbers(5, 3)
-print('The sum is:', result)
-```
+The public cloud platform Azure also uses PowerShell.
