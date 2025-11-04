@@ -3,12 +3,14 @@ site_url: https://example.com
 theme:
   name: material
   
+  
   font: 
     text: "AR One Sans"
     code: "Fira Code"
   logo: images/jor-edu.jpg
   features:
     - navigation.footer
+    - content.code.copy
   
   palette:
     # Darm Mode
