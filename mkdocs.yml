@@ -1,4 +1,5 @@
 site_name: Power Shell 7
+
 site_url: https://example.com
 theme:
   name: material
@@ -13,20 +14,10 @@ theme:
     - content.code.copy
   
   palette:
-    # Darm Mode
-    - scheme: slate
-      primary: green
-      accent: red
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
       # Light Mode
     - scheme: default
-      primary: blue
-      accent: red
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
+      primary: deep orange
+      accent: green
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -38,6 +29,9 @@ markdown_extensions:
   - pymdownx.superfences
   - admonition
   - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.tilde
+  - tables
 
 extra:
   social:
@@ -46,4 +40,4 @@ extra:
     - icon: fontawesome/brands/github
       link: https://jor-donegal.github.io/johnoraw.education/
 
-copyright: Copyright © 2025, John O'Raw
+copyright: Copyright © 2026 John O'Raw
